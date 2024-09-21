@@ -13,6 +13,8 @@ Refer to the [report](report.pdf) and [code](./Code) for further details and in-
         - ~
 
 
-### Data References:
+### Acknowledgments:
+
+The dataset used in this project comes from:
 
 Borkowski AA, Bui MM, Thomas LB, Wilson CP, DeLand LA, Mastorides SM. Lung and Colon Cancer Histopathological Image Dataset (LC25000). arXiv:1912.12142v1 [eess.IV], 2019
