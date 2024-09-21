@@ -3,7 +3,7 @@ This project aims to classify images in the given dataset as colon adenocarcinom
 
 ### Report:
 
-Refer to the [report] (report.pdf) and [code](./Code) for further details and in-depth analysis.
+Refer to the [report](report.pdf) and [code](./Code) for further details and in-depth analysis.
 
 ### Results:
 - Results after training 10000 images of colon adenocarcinoma and benign colon tissue
