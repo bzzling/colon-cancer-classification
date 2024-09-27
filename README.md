@@ -11,7 +11,12 @@ Refer to the [report](report.pdf) and [code](./Code) for further details and in-
     - training data / validation data split = 80/20
     - MODEL
         - ~
+### Data & Data Processing:
 
+### Model Architecture:
+- 
+
+### Baseline Model:
 
 ### Acknowledgments:
 
