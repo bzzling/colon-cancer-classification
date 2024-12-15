@@ -7,7 +7,7 @@ Currently, diagnostic measures diagnosing colon cancer involves a relatively sim
 
 ![Figure1](assets/imggal.png)
 
-Refer to the [report](report.pdf) and [code](./Code) for further details and in-depth analysis or try uploading your own data [here](gradio.com)
+Refer to the [report](report.pdf) and [code](./Code) for further details and in-depth analysis or try uploading your own samples [here](https://www.gradio.app/guides/quickstart)
 
 ### Results:
 - Results after training 10000 images of colon adenocarcinoma and benign colon tissue
