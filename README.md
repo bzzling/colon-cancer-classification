@@ -1,29 +1,35 @@
-# Colon Cancer Classification using Convolutional Neural Networks
+### Colon Cancer Classification using Convolutional Neural Networks
 This project aims to classify images in the given dataset as colon adenocarcinoma or benign colon tissue, making use of convolutional neural networks (CNN) and the PyTorch library.
 
-### Overview:
+#### Overview:
 
 Currently, diagnostic measures diagnosing colon cancer involves a relatively simple procedure called a colonoscopy. While physicians are generally able to extract potentially cancerous polyps, they cannot tell simply by looking at them whether or not the polyps are cancerous without sending them to the lab for further analysis. It is in the lab where errors can be made when determining the cancerous nature of polyps, since certain polyps may be mistakenly overlooked. In this regard, machine learning holds immense promise for improving the screening efforts of physicians to prevent colorectal cancer cases and improve early-detection efforts. By training a convolutional neural network on existing lab samples of colon tissue, we can hope to accurately identify polyp samples (which are simply extensions of tissue) when they reach the lab. The below graphic contains 16 labelled image samples that were used in the training of the CNN model. "colon-aca" and "colon-n" represent colon adenocarcinoma and benign colon tissue, respectively.
 
 ![Figure1](assets/imggal.png)
 
-Refer to the [report](report.pdf) and [code](./Code) for further details and in-depth analysis or try uploading your own samples <a href="https://www.gradio.app/guides/quickstart" target="_blank"><u>here</u></a>
+#### Results:
+- Various model architectures provided different accuracy on test data
+    - Random Forest: 53.3%
+    - CNN: 66.7%
+    - VGG-16 + Random Forest: 95.6%
+    - YOLOv8 + Random Forest: 96.2%
 
-### Results:
-- Results after training 10000 images of colon adenocarcinoma and benign colon tissue
-    - number of epochs = ~
+#### Data & Data Processing:
+
+- 10000 images of colon adenocarcinoma and benign colon tissue
     - training data / validation data split = 80/20
-    - MODEL
-        - ~
+- Various transforms were applied to the image data for better generalization
+    - resize to 180 x 180 pixels
+    - random horizontal flip
+    - random rotation by 10 degrees
+    - transform to tensor
+    - normalize tensor data
 
-### Data & Data Processing:
+#### Try it:
 
-### Model Architecture:
-- 
+Refer to the [report](report.pdf) and [code](./Code) for further details and analysis or try uploading your own samples [here](https://www.gradio.app/guides/quickstart)
 
-### Baseline Model:
-
-### Acknowledgments:
+#### Acknowledgments:
 
 The dataset used in this project comes from:
 
