@@ -8,7 +8,7 @@ Currently, diagnostic measures diagnosing colon cancer involves a relatively sim
 ![Figure1](assets/imggal.png)
 
 ### Results:
-- Various model architectures provided different accuracy on test data
+- Various model architectures were experimented with, each providing different accuracy on test data
     - Random Forest: 53.3%
     - CNN: 66.7%
     - VGG-16 + Random Forest: 95.6%
@@ -22,7 +22,7 @@ Currently, diagnostic measures diagnosing colon cancer involves a relatively sim
 
 ### Data & Data Processing:
 
-- 10000 images of colon adenocarcinoma and benign colon tissue
+- 10 000 images of colon adenocarcinoma and benign colon tissue
     - training data / validation data split = 80/20
 - Various transforms were applied to the image data for better generalization
     - resize to 180 x 180 pixels
@@ -33,7 +33,9 @@ Currently, diagnostic measures diagnosing colon cancer involves a relatively sim
 
 ### Try it:
 
-Refer to the [report](report.pdf) and [code](./Code) for further details and analysis or try uploading your own samples [here](https://www.gradio.app/guides/quickstart)
+Refer to the [report](report.pdf) and [code](./Code) for further details and analysis.
+
+Try the final model by uploading your own samples [here](https://www.gradio.app/guides/quickstart).
 
 ### Acknowledgments:
 
