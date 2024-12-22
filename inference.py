@@ -7,7 +7,7 @@ import joblib
 import numpy as np
 
 # Load the custom model
-model_path = "/Users/brandonling/Projects/colon-cancer-classification-using-cnn/models/random_forest_colon_cancer.pth"
+model_path = "./models/random_forest_vgg16.pth"
 model = joblib.load(model_path)
 
 # Load VGG16 model for feature extraction
@@ -36,7 +36,7 @@ def predict(inp):
     confidences = {labels[i]: float(prediction[i]) for i in range(len(labels))}
     return confidences
 
-example_images = ["/Users/brandonling/Projects/colon-cancer-classification-using-cnn/examples/aca-example.jpeg", "/Users/brandonling/Projects/colon-cancer-classification-using-cnn/examples/n-example.jpeg"]
+example_images = ["./examples/aca-example.jpeg", "./examples/n-example.jpeg"]
 
 gr.Interface(fn=predict,
              inputs=gr.Image(type="pil"),
