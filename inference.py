@@ -1,22 +1,21 @@
-from PIL import Image
-from torchvision import transforms, models
-import torch
-import gradio as gr
 import os
 import joblib
 import numpy as np
+import torch
+from torchvision import models, transforms
+import gradio as gr
 
 # Load the custom model
-model_path = "./models/random_forest_vgg16.pth"
+model_path = "./models/random_forest_resnet.pth"
 model = joblib.load(model_path)
 
-# Load VGG16 model for feature extraction
-vgg16 = models.vgg16(pretrained=True)
-vgg16.classifier = torch.nn.Sequential(*list(vgg16.classifier.children())[:-1])  # Remove the last layer
-vgg16.eval()
+# Load ResNet model for feature extraction
+resnet = models.resnet50(pretrained=True)
+resnet = torch.nn.Sequential(*list(resnet.children())[:-1])  # Remove the last layer
+resnet.eval()
 
 # Define the labels for your custom model
-labels = ["Colon Cancer", "Not Colon Cancer"]  # Update these labels according to your model's classes
+labels = ["Colon Cancer", "Not Colon Cancer"]
 
 def extract_features(image):
     preprocess = transforms.Compose([
@@ -27,12 +26,16 @@ def extract_features(image):
     ])
     image = preprocess(image).unsqueeze(0)
     with torch.no_grad():
-        features = vgg16(image).numpy().flatten().reshape(1, -1)
+        features = resnet(image).numpy().flatten().reshape(1, -1)
     return features
 
 def predict(inp):
+    threshold = 0.75  # Set a higher threshold for confidence
     features = extract_features(inp)
     prediction = model.predict_proba(features)[0]
+    max_confidence = max(prediction)
+    if max_confidence < threshold:
+        return {"Uncertain": 1.0}
     confidences = {labels[i]: float(prediction[i]) for i in range(len(labels))}
     return confidences
 
