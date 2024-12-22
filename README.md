@@ -1,9 +1,3 @@
----
-title: colon-cancer-classification-using-cnn
-app_file: inference.py
-sdk: gradio
-sdk_version: 5.9.0
----
 ## Colon Cancer Classification using Convolutional Neural Networks
 This project aims to classify images in the given dataset as colon adenocarcinoma or benign colon tissue, making use of convolutional neural networks (CNN) and the PyTorch library.
 
