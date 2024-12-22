@@ -1,0 +1,2 @@
+inp,output,timestamp
+.gradio/flagged/inp/0aa18a2a083f18e02d5a/a380top.png,"{""label"": ""binder"", ""confidences"": [{""label"": ""binder"", ""confidence"": 0.08044314384460449}, {""label"": ""fire screen"", ""confidence"": 0.0377972312271595}, {""label"": ""cleaver"", ""confidence"": 0.03778111934661865}]}",2024-12-15 00:32:55.552415
