@@ -11,8 +11,8 @@ Currently, diagnostic measures diagnosing colon cancer involves a relatively sim
 - Various model architectures were experimented with, each providing different accuracy on test data
     - Random Forest: 53.3%
     - CNN: 66.7%
-    - VGG-16 + Random Forest: 95.6%
-    - YOLOv8 + Random Forest: 96.2%
+    - VGG-16 + Random Forest: 99.0%
+    - ResNet + Random Forest: 99.8%
 - Best hyperparameters overall
     - SGD optimizer
     - cross-entropy loss
