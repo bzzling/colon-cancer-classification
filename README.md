@@ -1,4 +1,4 @@
-## Colon Cancer Classification using Convolutional Neural Networks
+## Colon Cancer Classification using Neural Networks
 This project aims to classify images in the given dataset as colon adenocarcinoma or benign colon tissue, making use of convolutional neural networks (CNN) and the PyTorch library.
 
 ### Overview:
