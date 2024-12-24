@@ -34,7 +34,7 @@ Currently, diagnostic measures diagnosing colon cancer involves a relatively sim
 
 ### Try it:
 
-Refer to the [report](report.pdf) and [code](./Code) for further details and analysis.
+Refer to the [report](report.pdf) and [code](./code) for further details and analysis.
 
 Try the most accurate model (ResNet feature extraction + random forest) by uploading your own samples [here](https://huggingface.co/spaces/bzzling/colon-cancer-classification), as demonstrated in the image below.
 
