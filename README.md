@@ -35,7 +35,9 @@ Currently, diagnostic measures diagnosing colon cancer involves a relatively sim
 
 Refer to the [report](report.pdf) and [code](./Code) for further details and analysis.
 
-Try the final model by uploading your own samples [here](https://www.gradio.app/guides/quickstart).
+Try the most accurate model by uploading your own samples [here](https://huggingface.co/spaces/bzzling/colon-cancer-classification), as demonstrated in the image below.
+
+![Figure1](assets/huggingface.png)
 
 ### Acknowledgments:
 
